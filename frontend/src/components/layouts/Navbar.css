@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #111 !important;
+}
+
+.nav-link {
+    color: white !important;
+}
+.navbar-brand {
+    color: white !important;
+    margin-left: 170px !important;
+}
+.navbar-nav {
+    margin-left: auto !important;
+}
+
+.top-nav {
+    position: relative;
+}
+
+.image-container {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust height as needed */
+    overflow: hidden;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional for text visibility */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.navbar {
+    z-index: 3; /* Ensure it stays above the image */
+}
+
+.navbar-toggler-icon {
+    background-color: white !important; /* Force the hamburger icon to be white */
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-color: white; /* For dark navbar, set the hamburger color to white */
+}
