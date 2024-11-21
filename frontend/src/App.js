@@ -48,6 +48,7 @@ function App() {
             {/* Public Routes */}
             <Route path='/'>
                 <CusNavigation />
+                <Home />
             </Route>
             <Route path='/cuslogin'>
                 <CusLogin />

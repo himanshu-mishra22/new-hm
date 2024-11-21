@@ -7,9 +7,11 @@ import FeaturedRooms from '../components/FeaturedRooms';
 const home = () => {
     return (
         <>
+            
+            
             <Hero>
                 <Banner title='Hotel Elite' subtitle='cheaper rooms starting at Rs.1500.00'>
-                    <Link to='/dashboard' className='btn-home-primary'>
+                    <Link to='/rooms' className='btn-home-primary'>
                         our rooms
                     </Link>
                 </Banner>

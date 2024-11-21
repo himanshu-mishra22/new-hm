@@ -23,6 +23,10 @@ export default function CusLogin() {
                 // Redirect based on user role
                 window.location = '/rooms';
             }
+            if(data.status === 'success' && data.data.role === 'admin'){
+                localStorage.setItem('access_token', data.token);
+                window.location = '/dashboard';
+            }
         } catch (e) {
             alert('Unauthorized user');
         } finally {
