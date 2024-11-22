@@ -51,6 +51,7 @@ export default function CusReg() {
                         useTransparency: true,
                         onOk: function () {},
                     });
+                    setInterval(()=>{window.location.href = "/cusLogin";},2000);
                 }
             }
         } catch (err) {

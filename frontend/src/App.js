@@ -40,7 +40,7 @@ import ViewPaidSalary from './components/employee/ViewPaidSalary';
 import AddPaidSalary from './components/employee/AddPaidSalary';
 import ViewAllSuppliers from './components/supplier/ViewAllSuppliers';
 
-import ProtectedRoute from './components/ProtectedRoute'; // Import the ProtectedRoute component
+import ProtectedRoute from './components/ProtectedRoute';
 
 function App() {
     return (
@@ -48,7 +48,7 @@ function App() {
             {/* Public Routes */}
             <Route path='/'>
                 <CusNavigation />
-                <Home />
+                {/* <Home /> */}
             </Route>
             <Route path='/cuslogin'>
                 <CusLogin />
